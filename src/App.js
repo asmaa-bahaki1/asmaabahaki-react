@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from './Components/Home/Home';
+
+import Bentley from './Components/Bentley/Bentley';
+
+import Bentaygas from './Components/Bentaygas/Bentaygas';
+
+import Bentaygab from './Components/Bentaygab/Bentaygab';
+
+import Bentaygar from './Components/Bentaygas/Bentaygar';
+
+import Bentaygag from './Components/Bentaygas/Bentaygag';
+
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+
+class App extends Component{
+
+render() {
+
+return(
+  <div>
+    <Router>
+  <div>
+    <Routes>
+      <Route path='/Bentaygas' element={<Bentaygas/>}/>
+      <Route path='/Bentaygag' element={<Bentaygag/>}/>
+      <Route path='/Bentaygab' element={<Bentaygab/>}/> 
+      <Route path='/Bentaygar' element={<Bentaygar/>}/>
+      <Route path='/Bentley' element={<Bentley/>}/>
+      <Route path='/' element={<Home/>}/>
+    </Routes>
+  </div>
+    </Router>
+  </div>
+)
+}
 }
 
 export default App;

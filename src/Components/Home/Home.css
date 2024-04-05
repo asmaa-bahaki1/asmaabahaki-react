@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+   }
+  
+  body {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .wavi {
+    margin-top: -300px;
+    margin-left:55px;
+    float: left;
+    position: relative;
+  }
+  .wavi span {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: #000000;
+    top: 333px;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    cursor: pointer;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+  
+  .jij img{      
+    margin-top: 14px;
+    float: left;
+    margin-left: 45px;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    width: 99px;
+    animation-delay: calc(.2s * var(--i));
+    cursor: pointer;
+    position: absolute;
+}
+
+.car{
+  position: absolute;
+  width: 100%;
+  height: 590px; 
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 60px;
+  background-size: cover;
+  background-image: url(https://i.pinimg.com/originals/75/fa/80/75fa8028d036baa82451cb81102822b2.gif)
+}
+
+.car h1{
+  color: white;
+  margin-top: 203px;
+  float: left;
+  font-size: 50px;
+  margin-left: 90px;
+}
+ 
+.car p{
+  color: white;
+  margin-top: 273px;
+  float: left;
+  font-size: 20px;
+  margin-left: -317px;
+  
+}
+  
+.marques{
+  margin-left: -40px;
+}
+
+.marques img{
+  width: 90px;  
+  cursor: pointer;
+  margin-top: 840px;
+  margin-left: 90px;
+}
+
+.marques img:hover{
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.namarques{ 
+  margin-left: 2px;
+  position: absolute;
+}
+
+.namarques h1{
+  float: left; 
+  color: #000000;
+  text-align: center;
+  margin-left: 7px;
+  margin-top: -1px;
+  cursor: pointer; 
+  padding: 14px 50px; 
+  font-size: 17px;
+}
+
+.marque h1{ 
+  margin: 0 auto;
+  max-width: -90px;
+  margin-left: 599px;
+  margin-top: 750px;
+  position: absolute;
+}

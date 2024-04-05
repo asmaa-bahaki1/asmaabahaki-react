@@ -1,0 +1,489 @@
+* {
+    padding: 0;
+    margin: 0;
+   }
+  
+  body {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .wav {
+    margin-top: -663px;
+    margin-left:55px;
+    float: left;
+    position: relative;
+  }
+  .wav span {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: #000000;
+    margin-top: 633px;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    cursor: pointer;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+  
+  .j img{      
+    margin-top: -49px;
+    float: left;
+    margin-left: 45px;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    width: 99px;
+    animation-delay: calc(.2s * var(--i));
+    cursor: pointer;
+    position: absolute;
+}
+.vo1{
+  background-color: #000;
+  width: 100%; 
+}
+.vo{   
+  height: 460px;
+  background-color: #000;
+  width: 1376px; 
+  padding: 3rem 2rem;
+  margin-top: 63px
+}
+.vo h1{
+  display: flex;
+  color: #ffffff;
+   height: 366px;
+   margin-top: 90px;
+}
+  
+.vo img{
+    margin-top: -104px;
+    position: absolute;
+    margin-left: 600px;
+    width: 770px;   
+    filter: drop-shadow(2px 0px 5px grey);
+} 
+
+.vo p{
+  color: #ffffff;
+  width: 690px;
+  margin-top: 20px;
+}
+
+.feature img{
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 9px;
+}
+.anim{
+    opacity: 1;
+    transform: translateY(30px );
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    10%{
+        opacity: 10;
+        transform: translateY(8px);
+    }
+
+}  
+ 
+
+.vo span {
+  display: inline-block;
+  text-shadow: 0 0 0 whitesmoke;
+  animation: smoky 5s 3s both;
+}
+
+.vo span:nth-child(even){
+  animation-name: smoky-mirror;
+}
+
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform:
+      translate3d(15rem,-8rem,0)
+      rotate(-40deg)
+      skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+  
+.loader {
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+.loader > span {
+  display: inline-block;
+  color: #fff;
+  font-size: 44px;
+  transform-style: preserve-3d;
+  margin-top: 120px;
+  transform-origin: 0 100%;
+  animation: anim 3s infinite linear;
+}
+.loader > span:nth-child(even) {
+  color: #9e00ed;
+}
+.loader > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader > span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.loader > span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.loader > span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.loader > span:nth-child(6) {
+  animation-delay: 1s;
+}
+.loader > span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.loader > span:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.loader > span:nth-child(9) {
+  animation-delay: 1.6s;
+}
+.loader > span:nth-child(10) {
+  animation-delay: 1.8s;
+}
+.loader > span:nth-child(11) {
+  animation-delay: 2s;
+}
+.loader > span:nth-child(12) {
+  animation-delay: 2.2s;
+}
+.loader > span:nth-child(13) {
+  animation-delay: 2.4s;
+}
+.loader > span:nth-child(14) {
+  animation-delay: 2.6s;
+}
+@keyframes anim {
+  35% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+ 
+.modeles h1{
+  margin-top: 82px;
+  margin-left: 40px;
+}
+
+.bent{
+  width: 30px;
+  position: absolute;
+  margin-left: 390px;
+  border-left: 1px solid grey;
+  height: 399px;
+  margin-top: 30px;
+}
+
+.bent1:hover{ 
+  transform: scale(0.9);
+  z-index: 1;
+}
+
+.bent1 img{
+  margin-left: -347px;
+  width: 120px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bent1 img:hover{
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.bent1 h1{
+  font-size: 12px;
+  margin-left: 17px;
+  margin-top: 39px;
+  position: absolute;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; 
+  display: inline-block;
+}
+
+.bent2 img{
+  margin-left: -370px;
+  width: 170px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.bent2 img:hover{
+  transform: scale(1.1);
+  z-index: 1;
+}
+.bent2 h1{
+  font-size: 12px;
+  margin-left: -209px;
+  margin-top: -55px;
+}
+
+.bent3 img{
+  margin-left: -347px;
+  width: 120px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.bent3 img:hover{
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.bent3 h1{
+  font-size: 12px;
+  margin-left: -210px;
+  margin-top: -38px;
+}
+
+.bent4 img{
+  margin-left: -347px;
+  width: 120px;
+  cursor: pointer;
+  margin-top: 57px;
+}
+
+.bent4 img:hover{
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.bent4 h1{
+  font-size: 12px;
+  margin-left: -210px;
+  margin-top: -40px;
+  color: #000;
+}
+
+.mod{
+  display: flex;
+  float: left; 
+  color: #000000;
+  text-align: center;
+  margin-left: 1px;
+  margin-top: -1px;
+  cursor: pointer; 
+  padding: 14px 1px; 
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.mod1 img{
+  margin-top: 20px;
+  margin-left: 448px;
+  width: 169px;
+}
+
+.mod1 h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 11px;
+  margin-left: 449px;
+}
+
+.mod2 h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  margin-top: -11px;
+  margin-left: 149px;
+}
+
+.mod2 img{
+  margin-top: 20px;
+  margin-left: 143px;
+  width: 233px;
+}
+
+.mod3 h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 9px;
+  margin-left: 149px;
+}
+
+.mod3 img{
+  margin-top: 20px;
+  margin-left: 143px;
+  width: 193px;
+  cursor: pointer;
+} 
+
+.mod4{
+  display: flex;
+  float: left; 
+  color: #000000;
+  text-align: center;
+  margin-left: -1359px;
+  margin-top: 145px;
+  cursor: pointer; 
+  padding: 14px 50px; 
+  font-size: 17px;
+}
+
+.mod5 img{
+  margin-top: 20px;
+  margin-left: 444px;
+  width: 193px;
+  cursor: pointer;
+}
+
+.mod5 h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 9px;
+  margin-left: 449px;
+}
+
+.mod6 img{
+  margin-top: 20px;
+  margin-left: 143px;
+  width: 193px;
+}
+
+.mod6 h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  margin-top: -3px;
+  margin-left: 149px;
+}
+
+.mod7 img{
+  margin-top: 20px;
+  margin-left: 142px;
+  width: 193px;
+}
+
+.mod7 h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 9px;
+  margin-left: 149px;
+}
+
+.mod8{
+  display: flex;
+  float: left; 
+  color: #000000;
+  text-align: center;
+  margin-left: -1359px;
+  margin-top: 145px;
+  cursor: pointer; 
+  padding: 14px 50px; 
+  font-size: 17px;
+}
+
+.mod9 img{
+  margin-top: 20px;
+  margin-left: 444px;
+  width: 193px;
+  cursor: pointer;
+}
+
+.mod9 h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 9px;
+  margin-left: 449px;
+}
+
+.mod10 img{
+  margin-top: 20px;
+  margin-left: 143px;
+  width: 185px;
+}
+
+.mod10 h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  margin-top: -3px;
+  margin-left: 149px;
+}
+
+.mod11 img{
+  margin-top: 25px;
+  margin-left: 142px;
+  width: 209px;
+}
+
+.mod11 h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 9px;
+  margin-left: 149px;
+}
+
+#bentleybaentayggaewb h1{
+  margin-top: 60px;
+  margin-left: 604px;
+  position: absolute;
+}
+
+#bentleybaentayggaewb img{ 
+  margin-left: 90px;
+  margin-top: 140px;
+}
+
+#bentleybaentayggaewb h2{
+  margin-top: 60px;
+  margin-left: 90px;
+  position: absolute;
+}
+ 
+#bentleybaentayggaewb p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 100px;
+  margin-left: 90px;
+  position: absolute;
+}
+
+
+.ir h2{
+  margin-top: 280px;
+  margin-left: 90px;
+  position: absolute;
+}
+ 
+.ir p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 320px;
+  margin-left: 90px;
+  position: absolute;
+}
+
+.ir1 h2{
+  margin-top: 580px;
+  margin-left: 90px;
+  position: absolute;
+}
+ 
+.ir1 p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 620px;
+  margin-left: 90px;
+  position: absolute;
+}
